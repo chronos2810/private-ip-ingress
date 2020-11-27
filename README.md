@@ -2,6 +2,8 @@
 
 **Required GKE Master Version: 1.17.13-gke.2001**
 
+Ref: https://cloud.google.com/kubernetes-engine/docs/how-to/internal-load-balance-ingress
+
 **1.** Network Creation
 
 ```bash
