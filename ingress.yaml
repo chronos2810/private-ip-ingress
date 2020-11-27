@@ -1,0 +1,13 @@
+# internal-ingress.yaml
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ilb-demo-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: "gce-internal"
+    kubernetes.io/ingress.regional-static-ip-name: "ip-reserved-name"
+spec:
+  backend:
+    serviceName: hostname
+    servicePort: 80
